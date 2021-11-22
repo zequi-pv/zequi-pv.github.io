@@ -1,0 +1,12 @@
+table {
+    width: 50%;
+}
+
+td {
+    text-align: center;
+}
+
+#ingresar {
+    display: none;
+    margin-left: 20%;
+}

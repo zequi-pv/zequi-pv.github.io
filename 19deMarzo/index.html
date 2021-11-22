@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>ejercicio</title>
+ </head>
+
+ <body>
+ <p> Ingrese su nombre </p>
+<input type="text" id="nombre">
+<p> Ingrese su apellido </p>
+<input type="text" id="apellido">
+ <p> Ingrese su edad </p>
+
+<input type="number" id="edad" >
+ <br>
+  <button onclick="mostrarDatos()"> Mostrar datos ingresados</button>
+
+   <h1 id="cuadroDeRespuesta">  </h1>
+
+    <script>
+
+    function mostrarDatos(){
+       var nombreIngresado = document.getElementById("nombre").value;
+       var apellidoIngresado = document.getElementById("apellido").value;
+        var edad = document.getElementById("edad").value;
+         var mensaje = "Mi nombre es " + nombreIngresado + " mi apellido es " + apellidoIngresado +  " y mi edad es "+ edad;
+       document.getElementById("cuadroDeRespuesta").innerHTML = mensaje;
+       document.getElementById("cuadroDeRespuesta").style.color = "black";
+       if(edad > 18){
+           document.body.style.backgroundColor = "blue";
+       }
+       if(edad < 18){
+           document.body.style.backgroundColor = "green";
+       }
+       if(edad < 1){
+        document.getElementById("cuadroDeRespuesta").innerHTML = "edad no valida";
+       document.getElementById("cuadroDeRespuesta").style.color = "red";
+       document.body.style.backgroundColor = "brown" ;
+    }
+    }
+    
+       </script>
+
+       </body>
+
+       </html>
+       

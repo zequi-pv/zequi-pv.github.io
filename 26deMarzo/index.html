@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>26deMarzo</title>
+</head>
+
+<body>
+<p> Primer operando: </p>
+<input type="number" id="numero1">
+
+<p> Segundo operando: </p>
+<input type="number" id="numero2">
+
+<br><br>
+
+<button onclick="sumar()"> + </button>
+<button onclick="restar()"> - </button>
+<button onclick="multiplicar()"> * </button>
+<button onclick="dividir()"> / </button>
+
+<h1 id="resultado"></h1>
+
+<script>
+
+    var numero1; 
+    var numero2;
+ 
+    function fijarVariables() {
+        numero1 = parseInt(document.getElementById("numero1").value);
+        numero2 = parseInt(document.getElementById("numero2").value);
+    }
+
+    function sumar() {
+        fijarVariables();
+        document.getElementById("resultado").innerHTML = numero1 + numero2;
+    }
+    function restar() {
+        fijarVariables();
+        document.getElementById("resultado").innerHTML = numero1 - numero2;
+    }
+    function multiplicar() {
+        fijarVariables();
+        document.getElementById("resultado").innerHTML = numero1 * numero2;
+    }
+    function dividir() {
+        fijarVariables();
+        document.getElementById("resultado").innerHTML = numero1 / numero2;
+    }
+
+</script></body></html>

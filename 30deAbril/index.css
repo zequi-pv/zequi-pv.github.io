@@ -1,0 +1,12 @@
+#imagen {
+    height: 1cm;
+    width: 1cm;
+}
+
+#imagen2 {
+    height: 1cm;
+    width: 1cm;
+    position: absolute;
+    margin-left: 8cm;
+    opacity: 0.5;
+}
