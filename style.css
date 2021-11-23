@@ -53,6 +53,7 @@ p{
     color: white; 
     padding-top: 20px; 
     margin-bottom: 10px;
+    font-family: 'Arial';
   }
   
   ::-webkit-scrollbar{
